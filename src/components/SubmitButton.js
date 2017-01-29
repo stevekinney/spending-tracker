@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const SubmitButton = ({ children }) => {
+const SubmitButton = ({ children, ...rest }) => {
   return (
-    <input type="submit" value={children} />
+    <input type="submit" value={children} {...rest} />
   );
 };
 

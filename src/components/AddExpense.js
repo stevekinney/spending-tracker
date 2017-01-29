@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import FormInput from './FormInput';
-import SubmitButton from './SubmitButton'
+import SubmitButton from './SubmitButton';
+import Button from './Button';
 import pick from 'lodash/pick';
 
 const selectProps = (props) => pick(props, 'name', 'amount', 'date', 'uid');
@@ -36,7 +37,7 @@ const AddExpense = (props) => {
       />
       <div className={css(styles.buttons)}>
         <SubmitButton>Add Expense</SubmitButton>
-        <button onClick={handleClear}>Clear</button>
+        <Button onClick={handleClear}>Clear</Button>
       </div>
     </form>
   );
@@ -50,9 +51,6 @@ const styles = StyleSheet.create({
   buttons: {
     display: 'flex',
     justifyContent: 'space-around'
-  },
-  button: {
-    flexGrow: 1
   }
 });
 
