@@ -25,8 +25,6 @@ Application.propTypes = {
 
 const styles = StyleSheet.create({
   application: {
-    backgroundColor: 'rgb(55, 139, 46)',
-    color: 'white',
     maxWidth: '600px',
     height: '100vh',
     margin: 'auto',

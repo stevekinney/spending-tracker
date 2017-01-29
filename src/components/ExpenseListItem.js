@@ -1,4 +1,6 @@
 import React, { PropTypes } from 'react';
+import { StyleSheet, css } from 'aphrodite/no-important';
+import { primaryMedium, primaryDark, primaryExtraDark } from '../styles/colors';
 import moment from 'moment';
 import numeral from 'numeral';
 
