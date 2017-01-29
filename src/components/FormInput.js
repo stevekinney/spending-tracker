@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { primaryLight, primaryMedium, primaryDark, primaryExtraDark } from '../styles/colors';
+import { primaryMedium, primaryDark, primaryExtraDark } from '../styles/colors';
 import generateHash from 'random-hash';
 import pick from 'lodash/pick';
 
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     width: '100%',
     ':focus': {
       borderColor: primaryExtraDark,
-      outline: 'none',
+      outline: 'none'
     }
   }
 });
