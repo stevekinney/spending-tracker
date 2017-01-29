@@ -3,13 +3,13 @@ import moment from 'moment';
 import numeral from 'numeral';
 
 const ExpenseListItem = ({ name, amount, date }) => (
-  <div>
+  <article>
     <h2>{name}</h2>
     <ul>
       <li>{numeral(amount).format('$0,000.00')}</li>
       <li>{moment(date).format('dddd, MMMM Do')}</li>
     </ul>
-  </div>
+  </article>
 );
 
 ExpenseListItem.propTypes = {
